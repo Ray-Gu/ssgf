@@ -1,0 +1,53 @@
+//此文件做一些重置和预处理css的工作
+
+
+body{
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;  //字体抗锯齿
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;   //优化字体渲染效果
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;  //字体家族设置
+}
+
+label{
+  font-weight: 700;
+}
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover{
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+}
+
+.clearfix{
+  &:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
